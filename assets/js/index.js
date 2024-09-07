@@ -189,10 +189,11 @@
 
 
 
-
+// -----------------------------
 
 // Ejercicio 2: Productos disponibles en stock
-// Consigna: Tienes un array de objetos que representan productos en una tienda. Cada producto tiene un nombre, un precio y una propiedad enStock que es un booleano. // Crear un array con el nombre y el precio del producto
+// Consigna: Tienes un array de objetos que representan productos en una tienda. Cada producto tiene un nombre, un precio y una propiedad enStock que es un booleano. 
+// Crear un array con el nombre y el precio del producto
 
 const productos = [
     { nombre: "Laptop", precio: 800, enStock: true },
@@ -201,4 +202,9 @@ const productos = [
     { nombre: "Mouse", precio: 10, enStock: true }
 ];
 
+const nombrePrecio = productos.map (p => `${p.nombre} - $${p.precio}`)
+console.log(nombrePrecio)
 
+
+
+// ["Laptop - $800", Teclado - 20, "Monitor - $150", "Mouse - $10"]
